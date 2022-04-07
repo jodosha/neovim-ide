@@ -51,6 +51,7 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
+  use "arkav/lualine-lsp-progress"
   use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
   use "lewis6991/impatient.nvim"
@@ -59,9 +60,8 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
 
-  -- Colorschemes
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "lunarvim/darkplus.nvim"
+  -- Theme
+  use "Mofiqul/dracula.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -93,6 +93,17 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
+
+  -- Languages
+  use 'vim-ruby/vim-ruby'
+  use 'fatih/vim-go'
+
+  -- Testing
+  use 'janko-m/vim-test'
+
+  -- Misc
+  use 'tpope/vim-surround'
+  use 'christoomey/vim-tmux-navigator'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

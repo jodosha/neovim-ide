@@ -51,20 +51,20 @@ function _NODE_TOGGLE()
 	node:toggle()
 end
 
-local ncdu = Terminal:new({ cmd = "ncdu", hidden = true })
+local top = Terminal:new({ cmd = "top", hidden = true })
 
-function _NCDU_TOGGLE()
-	ncdu:toggle()
+function _TOP_TOGGLE()
+	top:toggle()
 end
 
-local htop = Terminal:new({ cmd = "htop", hidden = true })
+local ruby = Terminal:new({ cmd = "irb", hidden = true })
 
-function _HTOP_TOGGLE()
-	htop:toggle()
+function _RUBY_TOGGLE()
+	ruby:toggle()
 end
 
-local python = Terminal:new({ cmd = "python", hidden = true })
+local bundle_console = Terminal:new({ cmd = "bundle console", hidden = true })
 
-function _PYTHON_TOGGLE()
-	python:toggle()
+function _BUNDLE_CONSOLE_TOGGLE()
+	bundle_console:toggle()
 end

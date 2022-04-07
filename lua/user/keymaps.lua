@@ -39,9 +39,27 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
+-- Remove search highlight
+keymap("n", "<C-n>", ":set nohlsearch off<CR>", opts)
+
+-- Force using hjkl, not arrows
+keymap("n", "<Left>", ":echoe 'Use h'<CR>", opts)
+keymap("n", "<Right>", ":echoe 'Use l'<CR>", opts)
+keymap("n", "<Up>", ":echoe 'Use k'<CR>", opts)
+keymap("n", "<Down>", ":echoe 'Use j'<CR>", opts)
+
+-- Find in project
+keymap("n", ",", "<cmd>Telescope live_grep<cr>", opts)
+
+-- Jumplist
+keymap("n", "<C-j>", "<cmd>Telescope jumplist<cr>", opts)
+
+-- Buffer list
+keymap("n", "<C-b>", "<cmd>Telescope buffers<cr>", opts)
+
 -- Insert --
 -- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
+-- keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
