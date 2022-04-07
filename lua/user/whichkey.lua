@@ -128,6 +128,15 @@ local mappings = {
     },
   },
 
+  j = {
+    name = "Test",
+    f = { "<cmd>TestFile -strategy=neovim<cr>", "Test File" },
+    l = { "<cmd>TestLast -strategy=neovim<cr>", "Test Last" },
+    n = { "<cmd>TestNearest -strategy=neovim<cr>", "Test Nearest" },
+    s = { "<cmd>TestSuite -strategy=neovim<cr>", "Test Suite" },
+    v = { "<cmd>TestVisit -strategy=neovim<cr>", "Test Visit" },
+  },
+
   l = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
